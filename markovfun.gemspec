@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["maria.pacana@gmail.com"]
   spec.description   = %q{Generates sentences using markov chains!}
   spec.summary       = %q{Generates sentences using markov chains!}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/mariapacana/markovfun"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

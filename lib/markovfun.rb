@@ -37,7 +37,7 @@ module Markovfun
   # where prev2 and prev1 are the two previous words. 
   # The values are hashes, in which the keys are words (cur) that have followed
   # prev2 and prev1, and the values are the number of occurrences.
-  def self.buildcounts(sentences)
+  def self.get_counts(sentences)
     counts_hash = {}
     sentences.each do |sent|
       # nil denotes the beginnings and ends of sentences
