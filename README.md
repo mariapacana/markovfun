@@ -1,6 +1,8 @@
 # Markovfun
 
-TODO: Write a gem description
+This gem generates sentences from textfiles using trigrams.
+It is based on Alex Rudnick's Python Markov chain generator,
+the code for which is [here](https://github.com/alexrudnick/hackerschool-demos/tree/master/ngrams).
 
 ## Installation
 
@@ -18,12 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Here's how you can generate a sentence from a text file.
 
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```
+sentences = Markovfun.get_sentences("bible.txt")
+counts = Markovfun.get_counts(sentences)
+probs = Markovfun.counts_to_probs(counts)
+Markovfun.sentence_from_probs_hash(probs)
+```
