@@ -91,6 +91,8 @@ module Markovfun
     # within a corpus.
     def self.score_sentence(sent, probs)
       total_surprise = 0
+
+      sent = sent[0..-2].split(" ").push(".")
       sent = [nil, nil] + sent + [nil]
 
       sent.zip(sent[1..-1], sent[2..-1]).each do |prev2, prev1, cur|

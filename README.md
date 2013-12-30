@@ -49,8 +49,13 @@ Score the sentence by "surprisal value" given a probability has.
 Here's how you can generate a sentence from a text file.
 
 ```
-sentences = Markovfun.get_sentences("bible.txt")
-counts = Markovfun.get_counts(sentences)
-probs = Markovfun.counts_to_probs(counts)
-Markovfun.sentence_from_probs_hash(probs, 4)
+sentences = Markovfun::Util.get_sentences("bible.txt")
+counts = Markovfun::Trigram.get_counts(sentences)
+probs = Markovfun::Trigram.counts_to_probs(counts)
+Markovfun::Trigram.sentence_from_probs_hash(probs, 4)
 ```
+
+### Sample Sentence!
+
+From "The Beautiful and the Damned":
+"I liked him tremendously--ah, she had enjoyed a rather romantic figure, a scholar, a recluse, a tower of erudition."
