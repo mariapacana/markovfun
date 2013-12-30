@@ -1,6 +1,6 @@
 # Markovfun
 
-This gem generates sentences from textfiles using trigrams.
+This gem generates sentences from textfiles using trigrams (and eventually will do the same for bigrams).
 It is based on Alex Rudnick's Python Markov chain generator,
 the code for which is [here](https://github.com/alexrudnick/hackerschool-demos/tree/master/ngrams).
 
@@ -40,7 +40,7 @@ Generate a sentence with a specified min length (in this case, 4) from the proba
 
 `sentence = Markovfun::Trigram.sentence_from_probs_hash(probs, 4)`
 
-Score the sentence by "surprisal value" given a probability has.
+Score the sentence by "surprisal value" given a probability hash.
 
 `Markovfun::Trigram.score_sentence(sentence, probs)`
 
