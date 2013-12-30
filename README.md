@@ -1,6 +1,6 @@
 # Markovfun
 
-This gem generates sentences from textfiles using trigrams.
+This gem generates sentences from textfiles using trigrams (and eventually will do the same for bigrams).
 It is based on Alex Rudnick's Python Markov chain generator,
 the code for which is [here](https://github.com/alexrudnick/hackerschool-demos/tree/master/ngrams).
 
