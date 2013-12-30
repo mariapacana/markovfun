@@ -2,8 +2,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'markovfun/version'
-require 'trigram'
-require 'util'
 require 'pry'
 
 Gem::Specification.new do |spec|

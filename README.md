@@ -36,13 +36,13 @@ Convert hash of counts to hash of probabilities.
 
 `probs = Markovfun::Trigram.counts_to_probs(counts)`
 
-Generate a sentence of minimum length 4 from the probability hash.
+Generate a sentence with a specified min length (in this case, 4) from the probability hash.
 
 `sentence = Markovfun::Trigram.sentence_from_probs_hash(probs, 4)`
 
-Score the sentence by "surprisal value"
+Score the sentence by "surprisal value" given a probability has.
 
-`Markovfun::Trigram.score_sentence(sentence)`
+`Markovfun::Trigram.score_sentence(sentence, probs)`
 
 ### Sample Program
 

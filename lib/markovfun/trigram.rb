@@ -1,5 +1,5 @@
 require "markovfun/version"
-require "util"
+require "markovfun/util"
 
 module Markovfun
   module Trigram
