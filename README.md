@@ -40,7 +40,7 @@ Generate a sentence with a specified min length (in this case, 4) from the proba
 
 `sentence = Markovfun::Trigram.sentence_from_probs_hash(probs, 4)`
 
-Score the sentence by "surprisal value" given a probability has.
+Score the sentence by "surprisal value" given a probability hash.
 
 `Markovfun::Trigram.score_sentence(sentence, probs)`
 
